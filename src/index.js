@@ -1,6 +1,7 @@
 import axios from "axios";
 import SlimSelect from 'slim-select'
 import Notiflix from 'notiflix';
+import 'slim-select/dist/slimselect.css'
 
 axios.defaults.headers.common["x-api-key"] = "live_cm4VvcL13mJC0Z6PXYsVqPJ4kugv341iWtwgFhjXECmiBHMq4nTNEzrGgpELYQ3V";
 let selectList = document.querySelector('.breed-select')
