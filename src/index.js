@@ -24,7 +24,6 @@ axios.get('https://api.thecatapi.com/v1/breeds')
           new SlimSelect({
           select: '.breed-select'
           })
-        loader.style.display = 'none' 
         fail.style.display = 'none' 
   })
   .catch(function (error) {
@@ -52,13 +51,15 @@ function fetchCatByBreed(breedId) {
                                 
      }
 
-
+        loader.style.display = 'none' 
+        fail.style.display = 'none' 
 });
   })
   .catch(function (error) {
     // manejar error
       Notiflix.Notify.failure('Fallo al procesar la Solicitud, Por favor verificar Raza');
-      
+      loader.style.display = 'flex'
+      fail.style.display = 'flex' 
   })
 } 
 
