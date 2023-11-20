@@ -44,7 +44,7 @@ function fetchCatByBreed(breedId) {
       // manejar respuesta exitosa
       names.forEach( cat => {
      if (cat.id == breedId) {
-         container.innerHTML = ` <img src=${response.data[0].url} alt="${cat.name} cat photo" width="300px" heigth="300px">
+         container.innerHTML = ` <img src=${response.data[0].url} alt="${cat.name} cat photo" width="800px" heigth="600px">
                                  <div class="text-container">
                                  <h1 class:"cat__title">${cat.name}</h1>
                                  <p style="text-align: justify">${cat.description}
